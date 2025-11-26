@@ -1,16 +1,79 @@
 <!DOCTYPE html>
-
-<html>
-
+<html lang="en">
 <head>
-	<link rel="stylesheet" href="styles.css">
+  <meta charset="UTF-8">
+  <title>My Playlist</title>
+  <style>
+    body {
+      background-color: rgb(204, 204, 204);
+      font-family: Arial, sans-serif;
+    }
+    h1, h2 {
+      text-align: center;
+    }
+    .playlist-box {
+      background: #fff;
+      border: 2px solid #222;
+      border-radius: 10px;
+      width: 90%;
+      max-width: 560px;
+      margin: 20px auto;
+      padding: 18px 8px;
+    }
+    ul {
+      margin: 0;
+      padding: 0;
+    }
+    li {
+      list-style-type: none;
+      margin: 8px 0;
+    }
+    a {
+      text-decoration-line: none;
+      color: #111;
+      font-size: 18px;
+    }
+    .player_one, .player_two {
+      background-color: rgb(255, 255, 255);
+      border-radius: 12px;
+      padding: 14px;
+      margin: 0 auto 18px auto;
+      width: 90%;
+      max-width: 560px;
+      box-shadow: 0 1px 12px rgba(0,0,0,0.06);
+      display: block;
+    }
+    .player_two audio {
+      width: 98%;
+      margin-top: 8px;
+    }
+  </style>
 </head>
-
 <body>
-	<!-- the entire body must be written by student -->
-    <script type="text/javascript" src="./script.js">
-</script>
-
+  <h1>My Playlist</h1>
+  <div class="playlist-box">
+    <ul>
+      <li><a href="https://www.example.com/song1" target="_blank">Song 1</a></li>
+      <li><a href="https://www.example.com/song2" target="_blank">Song 2</a></li>
+      <li><a href="https://www.example.com/song3" target="_blank">Song 3</a></li>
+      <li><a href="https://www.example.com/song4" target="_blank">Song 4</a></li>
+      <li><a href="https://www.example.com/song5" target="_blank">Song 5</a></li>
+    </ul>
+  </div>
+  <h2>Now Playing...</h2>
+  <div class="player_one">
+    <video controls width="100%">
+      <source src="https://www.w3schools.com/tags/movie.mp4" type="video/mp4">
+      Your browser does not support the video tag.
+    </video>
+  </div>
+  <h2>MP3 songs</h2>
+  <div class="player_two">
+    <div>Maan Meri Jaan</div>
+    <audio controls>
+      <source src="https://www.pagalworld.com.se/files/download/id/64630" type="audio/mpeg">
+      Your browser does not support the audio element.
+    </audio>
+  </div>
 </body>
-
 </html>
